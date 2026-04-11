@@ -1,0 +1,10 @@
+{
+	"luci-app-router-config": {
+		"title": "Router Config",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "router-config"
+		}
+	}
+}
