@@ -1,0 +1,17 @@
+{
+	"luci-app-router-config": {
+		"description": "ACL for router configuration interface",
+		"read": {
+			"ubus": {
+				"file": [ "list" ],
+				"uci": [ "get", "get_all", "changes" ]
+			}
+		},
+		"write": {
+			"ubus": {
+				"file": [ "read", "write" ],
+				"uci": [ "set", "add", "delete", "confirm", "unconfirmed", "apply", "reload" ]
+			}
+		}
+	}
+}
